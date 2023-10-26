@@ -214,11 +214,10 @@ button {
 .clients__inner {
     display: flex;
     align-items: center;
-    column-gap: 105px;
+    justify-content: space-between;
 }
 
 .client__heading {
-    flex-shrink: 0;
     --with-first-line: 86px;
     margin-left: var(--with-first-line);
     position: relative;
@@ -227,6 +226,7 @@ button {
     font-size: 4.2rem;
     font-weight: 500;
     line-height: 119.048%;
+    letter-spacing: -0.168rem;
 }
 
 .client__heading::before {
@@ -241,8 +241,9 @@ button {
 }
 
 .clients__list {
+    flex-shrink: 2;
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(3, 1fr) 102px;
     align-items: center;
     gap: 41px 36px;
 }
@@ -261,7 +262,6 @@ button {
 }
 
 .clients-item__name {
-    flex-shrink: 0;
     font-size: 1.7rem;
     font-weight: 500;
 }
@@ -278,7 +278,7 @@ button {
 }
 
 .skills__list {
- margin-top: 60px;
+    margin-top: 60px;
 }
 
 .skills-item {
