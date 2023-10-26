@@ -8,6 +8,7 @@
 .container,
 .container-fluid {
     --column-size: 12;
+    --spacer: 40px;
 
     width: 100%;
     margin-left: auto;
@@ -27,10 +28,6 @@
 /* Gutter = 0 */
 .g-0 {
     --spacer: 0;
-}
-
-.col {
-    flex: 1 0;
 }
 
 /* Offset */
@@ -203,6 +200,11 @@
 .col-12 {
     --column-number: 12;
 }
+
+.col {
+    flex: 1 0;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .container {
@@ -366,6 +368,7 @@
 @media (min-width: 768px) {
     .container {
         max-width: 720px;
+        --spacer: 28px;
     }
 
     /* Gutter = 0 */
@@ -683,6 +686,7 @@
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .container {
+        --spacer: 30px;
         max-width: 1170px;
     }
 

@@ -37,6 +37,33 @@ button {
 }
 
 /* =============== Common =============== */
+.btn {
+    min-width: 170px;
+    height: 62px;
+    color: #fdfdfd;
+    background: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 166.667%;
+}
+
+.section-heading {
+    text-align: center;
+    color: var(--heading-color);
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 117.857%;
+    letter-spacing: -0.224rem;
+}
+
+.section-desc {
+    margin-top: 20px;
+    color: #51586a;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 166.667%;
+}
 
 /* =============== Header =============== */
 .header {
@@ -44,6 +71,7 @@ button {
     padding-top: 20px;
     top: -10px;
     background-color: #fbfaff;
+    z-index: 9;
 }
 
 .header__inner {
@@ -93,6 +121,7 @@ button {
     line-height: 143.75%;
 }
 
+/* =============== Hero =============== */
 .hero {
     padding-top: 66px;
     background-color: #fbfaff;
@@ -139,17 +168,6 @@ button {
     column-gap: 30px;
 }
 
-.hero-cta__btn {
-    width: 170px;
-    height: 62px;
-    background: var(--primary-color);
-
-    color: #fdfdfd;
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 166.667%;
-}
-
 .hero-cta__link {
     color: var(--heading-color);
     font-size: 1.8rem;
@@ -170,4 +188,121 @@ button {
     color: var(--normal-text-color);
     font-weight: 500;
     line-height: 187.5%;
+}
+
+.hero-social__list {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.hero-socical__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(8, 4, 21, 0.1);
+}
+
+/* =============== Clients =============== */
+.clients {
+    margin-top: 100px;
+}
+
+.clients__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 105px;
+}
+
+.client__heading {
+    flex-shrink: 0;
+    --with-first-line: 86px;
+    margin-left: var(--with-first-line);
+    position: relative;
+    width: 253px;
+    color: var(--heading-color);
+    font-size: 4.2rem;
+    font-weight: 500;
+    line-height: 119.048%;
+}
+
+.client__heading::before {
+    position: absolute;
+    left: calc(-1 * (var(--with-first-line) + 13px));
+    top: 22px;
+    content: "";
+    display: block;
+    width: 86px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.clients__list {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    gap: 41px 36px;
+}
+
+.clients-item {
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    column-gap: 13px;
+}
+
+.clients-item__logo {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.clients-item__name {
+    flex-shrink: 0;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+/* =============== Skills =============== */
+.skills {
+    margin-top: 133px;
+}
+
+.skills__desc {
+    width: 534px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills__list {
+ margin-top: 60px;
+}
+
+.skills-item {
+    padding: 32px 42px;
+}
+
+.skills-item__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 74px;
+    height: 74px;
+    border: 1px solid rgba(8, 4, 21, 0.1);
+    border-radius: 50%;
+}
+
+.skills-item__title {
+    text-align: left;
+    margin-top: 40px;
+    font-size: 3.2rem;
+    line-height: 125%;
+    letter-spacing: -0.128rem;
+}
+
+.skills-item__sub-title {
+    text-align: left;
 }

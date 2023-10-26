@@ -1,0 +1,331 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .hidden-on-pc,
+    .header__logo--mobile {
+        display: none;
+    }
+}
+
+/* Tablet & mobile */
+@media screen and (max-width: 991.98px) {
+    /* ========== Header ==========*/
+    .header {
+        margin-left: 7px;
+        margin-right: 7px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #d6d3e2;
+    }
+
+    .header__logo--mobile {
+        left: 20px;
+    }
+
+    .header__inner {
+        justify-content: flex-end;
+    }
+
+    .header-email__message {
+        width: 32px;
+        height: 32px;
+    }
+
+    .header-email__img {
+        width: 16.696px;
+        height: 10.848px;
+    }
+
+    .header__logo--pc,
+    .header-email__link,
+    .header__navbar {
+        display: none;
+    }
+
+    .header__list-mobile {
+        display: block;
+    }
+
+    .order-1 {
+        order: 1;
+    }
+
+    .order-2 {
+        order: 2;
+    }
+
+    /* ========== Menu header ==========*/
+    .show-on-tablet {
+        display: block;
+    }
+
+    .input-check-menu {
+        display: none;
+    }
+
+    .input-check-menu:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .input-check-menu:checked ~ .menu-drawer {
+        translate: 0;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 3;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s ease;
+        z-index: 10;
+    }
+
+    .menu-drawer {
+        position: fixed;
+        inset: 0 40% 0 0;
+        background-color: #fff;
+        z-index: 5;
+        translate: -100%;
+        transition: 0.2s ease-in-out;
+        padding: 20px;
+        z-index: 10;
+    }
+
+    .menu-drawer__header {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .header__list {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .header__list li {
+        border-radius: 5px;
+    }
+
+    .header__list li:hover {
+        background-color: #ccc;
+    }
+
+    .header__link {
+        display: block;
+        padding: 10px;
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+    /* ========== Hero ==========*/
+    .hero {
+        padding-top: 0;
+        background-image: url(../images/bgr-hero-mobile.png);
+    }
+
+    .hero__media {
+        padding-right: 0;
+    }
+
+    .hero__info {
+        margin-left: 0;
+        padding-top: 50px;
+    }
+
+    .hero-social {
+        margin-top: 25px;
+    }
+
+    /* ========== Clients ==========*/
+    .clients__inner {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .client__heading {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .client__heading::before {
+        top: 0;
+        left: 50%;
+        translate: -50%;
+    }
+
+    .clients__list {
+        margin-top: 42px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    /*  */
+    .skills-item {
+        text-align: center;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Moblile */
+@media screen and (max-width: 767.98px) {
+    @keyframes slide {
+        0% {
+            translate: 0;
+        }
+        25% {
+            translate: -100vw;
+        }
+        50% {
+            translate: -200vw;
+        }
+        75% {
+            translate: -100vw;
+        }
+        100%{
+            translate: 0;
+        }
+    }
+    .header__container-mobile {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+    .menu-drawer {
+        inset: 0 20% 0 0;
+    }
+    /* ========== Hero ========== */
+    .hero {
+        background-size: 100% 100%;
+        background-position: center -80px;
+    }
+
+    .hero__info {
+        width: 318px;
+    }
+
+    .hero__heading {
+        font-size: 4.2rem;
+    }
+
+    .hero__desc {
+        font-size: 1.6rem;
+    }
+
+    .hero__desc {
+        margin-top: 30px;
+    }
+
+    .hero__media {
+        margin-top: 20px;
+    }
+
+    .hero-cta__btn,
+    .hero-cta__link {
+        font-size: 1.6rem;
+    }
+
+    .hero-cta__btn {
+        width: 147px;
+        height: 55px;
+    }
+
+    /* ========== Client ========== */
+    .client__heading {
+        width: 169px;
+        font-size: 2.8rem;
+        line-height: 121.429%;
+        letter-spacing: -0.112rem;
+    }
+
+    .client__heading::before {
+        width: 48px;
+    }
+
+    .clients-item__name {
+        font-size: 1.4rem;
+    }
+
+    /* ========== Client ========== */
+    .section-heading {
+        font-size: 3.6rem;
+    }
+
+    /* Skill */
+
+    .skills {
+        margin-top: 120px;
+    }
+
+    .no-wrap {
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+
+    .skills-item {
+        padding: 30px 50px;
+        animation: slide 40s linear infinite;
+    }
+
+    .skills__desc {
+        width: 350px;
+        font-size: 1.6rem;
+        line-height: 162.5%;
+    }
+
+    .skills-item__icon {
+        width: 62px;
+        height: 62px;
+    }
+
+    .skills-item__title {
+        margin-top: 30px;
+        font-size: 2.8rem;
+        line-height: 128.571%;
+    }
+
+    .skills-item__sub-title {
+        font-size: 1.6rem;
+        line-height: 175%;
+    }
+
+    .slide-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 13px;
+    }
+
+    .dot-1,
+    .dot-2,
+    .dot-3 {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: rgba(8, 4, 21, 0.2);
+    }
+
+    #skill-1:checked ~ .dot-1,
+    #skill-2:checked ~ .dot-2,
+    #skill-3:checked ~ .dot-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 1px solid var(--primary-color);
+    }
+
+    #skill-1:checked ~ .dot-1::before,
+    #skill-2:checked ~ .dot-2::before,
+    #skill-3:checked ~ .dot-3::before {
+        display: block;
+        content: "";
+        width: 12px;
+        height: 12px;
+        background-color: #5d3bee;
+        border-radius: 50%;
+    }
+}

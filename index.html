@@ -101,23 +101,36 @@
     <body>
         <!-- Header -->
         <header class="header">
-            <div class="container">
+            <div class="container header__container-mobile">
                 <div class="header__inner">
                     <div class="header-email">
                         <div class="header-email__message">
                             <img
                                 src="./assets/icons/message.png"
                                 alt="Message"
+                                class="header-email__img"
                             />
                         </div>
                         <a href="#!" class="header-email__link"
                             >hi@arif.interactive</a
                         >
+                        <label for="toggle-menu" class="toggle-menu">
+                            <img
+                                src="./assets/icons/header-list.svg"
+                                alt="List"
+                                class="header__list-mobile hidden-on-pc"
+                            />
+                        </label>
                     </div>
                     <img
                         src="./assets/images/logo.svg"
                         alt="An Interactive Designer"
-                        class="header__logo"
+                        class="header__logo header__logo--pc"
+                    />
+                    <img
+                        src="./assets/images/logo-mobile.svg"
+                        alt="An Interactive Designer"
+                        class="header__logo header__logo--mobile"
                     />
                     <nav class="header__navbar">
                         <ul class="header__list">
@@ -138,13 +151,54 @@
                 </div>
             </div>
         </header>
+
+        <!-- Header mobile-->
+        <header class="header-mobile hidden-on-pc">
+            <!-- Toggle -->
+            <input
+                type="checkbox"
+                id="toggle-menu"
+                hidden
+                class="input-check-menu"
+            />
+            <!-- Overlay -->
+            <label for="toggle-menu" class="menu-overlay"></label>
+
+            <!-- Menu content  -->
+            <div class="menu-drawer">
+                <div class="menu-drawer__header">
+                    <img
+                        src="./assets/images/logo-mobile.svg"
+                        alt=""
+                        class="menu-drawer__logo"
+                    />
+                </div>
+                <nav class="header__navbar show-on-tablet">
+                    <ul class="header__list">
+                        <li>
+                            <a href="#!" class="header__link">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="header__link">Journey</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="header__link">Service</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="header__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
         <!-- Main content -->
         <main>
             <!-- Hero -->
             <section class="hero">
                 <div class="container">
-                    <div class="row row-cols-lg-2">
-                        <div class="col">
+                    <div class="row row-cols-lg-2 row-cols-1">
+                        <div class="col order-2">
                             <div class="hero__media">
                                 <img
                                     src="./assets/images/hero-img-1.png"
@@ -153,7 +207,7 @@
                                 />
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col order-1">
                             <div class="hero__info">
                                 <h1 class="hero__heading">
                                     An Interactive Designer
@@ -164,9 +218,7 @@
                                     ut elementum turpis.
                                 </p>
                                 <div class="hero-cta">
-                                    <button class="hero-cta__btn">
-                                        Book a Call
-                                    </button>
+                                    <button class="btn">Book a Call</button>
                                     <a href="" class="hero-cta__link"
                                         >My Works</a
                                     >
@@ -175,14 +227,218 @@
                                     <span class="hero-social__label"
                                         >Follow me on:</span
                                     >
-                                    <img
-                                        src="./assets/images/hero-social.svg"
-                                        alt="social"
-                                        class="hero-social__img"
-                                    />
+                                    <div class="hero-social__list">
+                                        <div class="hero-socical__item">
+                                            <img
+                                                src="./assets/images/hero-bee.svg"
+                                                alt="Bee"
+                                            />
+                                        </div>
+                                        <div class="hero-socical__item">
+                                            <img
+                                                src="./assets/images/hero-ball.svg"
+                                                alt="ball"
+                                            />
+                                        </div>
+                                        <div class="hero-socical__item">
+                                            <img
+                                                src="./assets/images/hero-instagram.svg"
+                                                alt="instagram"
+                                            />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Clients -->
+            <section class="clients">
+                <div class="container">
+                    <div class="clients__inner">
+                        <h2 class="client__heading">Meet my recent clients</h2>
+
+                        <!-- Client List  -->
+                        <div class="clients__list">
+                            <div class="clients-item">
+                                <img
+                                    src="./assets/images/client-google.svg"
+                                    alt=""
+                                    class="clients-item__logo"
+                                />
+                                <span class="clients-item__name">Google</span>
+                            </div>
+                            <div class="clients-item">
+                                <img
+                                    src="./assets/images/client-warner-bros.svg"
+                                    alt=""
+                                    class="clients-item__logo"
+                                />
+                                <span class="clients-item__name"
+                                    >Warner Bros</span
+                                >
+                            </div>
+                            <div class="clients-item">
+                                <img
+                                    src="./assets/images/client-mailchimp.svg"
+                                    alt=""
+                                    class="clients-item__logo"
+                                />
+                                <span class="clients-item__name"
+                                    >Mailchimp</span
+                                >
+                            </div>
+                            <div class="clients-item">
+                                <img
+                                    src="./assets/images/client-adobe.svg"
+                                    alt=""
+                                    class="clients-item__logo"
+                                />
+                                <span class="clients-item__name">Adobd</span>
+                            </div>
+                            <div class="clients-item">
+                                <img
+                                    src="./assets/images/client-upwork.svg"
+                                    alt=""
+                                    class="clients-item__logo"
+                                />
+                                <span class="clients-item__name">Upwork</span>
+                            </div>
+                            <div class="clients-item">
+                                <img
+                                    src="./assets/images/client-cloud.svg"
+                                    alt=""
+                                    class="clients-item__logo"
+                                />
+                                <span class="clients-item__name"
+                                    >Creative Cloud</span
+                                >
+                            </div>
+                            <div class="clients-item">
+                                <img
+                                    src="./assets/images/client-wooco.svg"
+                                    alt=""
+                                    class="clients-item__logo"
+                                />
+                                <span class="clients-item__name"
+                                    >Woocommerce</span
+                                >
+                            </div>
+                            <div class="clients-item">
+                                <img
+                                    src="./assets/images/client-canva.svg"
+                                    alt=""
+                                    class="clients-item__logo"
+                                />
+                                <span class="clients-item__name">Canva</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section class="skills">
+                <div class="container">
+                    <!-- Heading -->
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="section-heading">Specialities</h2>
+                            <p class="section-desc skills__desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Skill list -->
+                    <div class="skills__list">
+                        <div
+                            class="row row-cols-1 row-cols-lg-3 row-cols-md-2 no-wrap"
+                        >
+                            <!-- Skill item 1 -->
+                            <div class="col">
+                                <article class="skills-item">
+                                    <div class="skills-item__icon">
+                                        <img
+                                            src="./assets/icons/skill-icon-1.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <h3
+                                        class="skills-item__title section-heading"
+                                    >
+                                        Product design
+                                    </h3>
+                                    <p
+                                        class="skills-item__sub-title section-desc"
+                                    >
+                                        Lorem ipsum dolor sit amet, solor
+                                        adipiscing elit. Non nisl solor ut
+                                        elementum turpis.
+                                    </p>
+                                </article>
+                            </div>
+                            <!-- Skill item 2 -->
+                            <div class="col">
+                                <article class="skills-item">
+                                    <div class="skills-item__icon">
+                                        <img
+                                            src="./assets/icons/skill-icon-2.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <h3
+                                        class="skills-item__title section-heading"
+                                    >
+                                        UI/UX Design
+                                    </h3>
+                                    <p
+                                        class="skills-item__sub-title section-desc"
+                                    >
+                                        Lorem ipsum dolor sit amet, solor
+                                        adipiscing elit. Non nisl solor ut
+                                        elementum turpis.
+                                    </p>
+                                </article>
+                            </div>
+                            <!-- Skill item 3 -->
+                            <div class="col">
+                                <article class="skills-item">
+                                    <div class="skills-item__icon">
+                                        <img
+                                            src="./assets/icons/skill-icon-3.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <h3
+                                        class="skills-item__title section-heading"
+                                    >
+                                        Interactive design
+                                    </h3>
+                                    <p
+                                        class="skills-item__sub-title section-desc"
+                                    >
+                                        Lorem ipsum dolor sit amet, solor
+                                        adipiscing elit. Non nisl solor ut
+                                        elementum turpis.
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide dots -->
+                    <div class="slide-dots hidden-on-pc">
+                        <!-- Input -->
+                        <input type="radio" name="skill" id="skill-1" hidden />
+                        <input type="radio" name="skill" id="skill-2" hidden checked />
+                        <input type="radio" name="skill" id="skill-3" hidden />
+                        <!-- Dots -->
+                        <label for="skill-1" class="dot-1 dot"></label>
+                        <label for="skill-2" class="dot-2 dot"></label>
+                        <label for="skill-3" class="dot-3 dot"></label>
                     </div>
                 </div>
             </section>
