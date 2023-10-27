@@ -101,53 +101,63 @@
     <body>
         <!-- Header -->
         <header class="header">
-            <div class="container header__container-mobile">
-                <div class="header__inner">
-                    <div class="header-email">
-                        <div class="header-email__message">
-                            <img
-                                src="./assets/icons/message.png"
-                                alt="Message"
-                                class="header-email__img"
-                            />
+            <div class="header__deco">
+                <div class="container header__container-mobile">
+                    <div class="header__inner">
+                        <div class="header-email">
+                            <div class="header-email__message">
+                                <img
+                                    src="./assets/icons/message.png"
+                                    alt="Message"
+                                    class="header-email__img"
+                                />
+                            </div>
+                            <a href="#!" class="header-email__link"
+                                >hi@arif.interactive</a
+                            >
+                            <label for="toggle-menu" class="toggle-menu">
+                                <img
+                                    src="./assets/icons/header-list.svg"
+                                    alt="List"
+                                    class="header__list-mobile hidden-on-pc"
+                                />
+                            </label>
                         </div>
-                        <a href="#!" class="header-email__link"
-                            >hi@arif.interactive</a
-                        >
-                        <label for="toggle-menu" class="toggle-menu">
-                            <img
-                                src="./assets/icons/header-list.svg"
-                                alt="List"
-                                class="header__list-mobile hidden-on-pc"
-                            />
-                        </label>
+                        <img
+                            src="./assets/images/logo.svg"
+                            alt="An Interactive Designer"
+                            class="header__logo header__logo--pc"
+                        />
+                        <img
+                            src="./assets/images/logo-mobile.svg"
+                            alt="An Interactive Designer"
+                            class="header__logo header__logo--mobile"
+                        />
+                        <nav class="header__navbar">
+                            <ul class="header__list">
+                                <li>
+                                    <a href="#!" class="header__link"
+                                        >Projects</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#!" class="header__link"
+                                        >Journey</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#!" class="header__link"
+                                        >Service</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#!" class="header__link"
+                                        >Contact</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                    <img
-                        src="./assets/images/logo.svg"
-                        alt="An Interactive Designer"
-                        class="header__logo header__logo--pc"
-                    />
-                    <img
-                        src="./assets/images/logo-mobile.svg"
-                        alt="An Interactive Designer"
-                        class="header__logo header__logo--mobile"
-                    />
-                    <nav class="header__navbar">
-                        <ul class="header__list">
-                            <li>
-                                <a href="#!" class="header__link">Projects</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="header__link">Journey</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="header__link">Service</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="header__link">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
                 </div>
             </div>
         </header>
@@ -356,7 +366,7 @@
                     <!-- Skill list -->
                     <div class="skills__list">
                         <div
-                            class="row row-cols-1 row-cols-lg-3 row-cols-md-2 no-wrap"
+                            class="row row-cols-1 row-cols-lg-3 row-cols-md-2 no-wrap g-xl-30"
                         >
                             <!-- Skill item 1 -->
                             <div class="col">
@@ -433,13 +443,136 @@
                     <div class="slide-dots hidden-on-pc">
                         <!-- Input -->
                         <input type="radio" name="skill" id="skill-1" hidden />
-                        <input type="radio" name="skill" id="skill-2" hidden checked />
+                        <input
+                            type="radio"
+                            name="skill"
+                            id="skill-2"
+                            hidden
+                            checked
+                        />
                         <input type="radio" name="skill" id="skill-3" hidden />
                         <!-- Dots -->
                         <label for="skill-1" class="dot-1 dot"></label>
                         <label for="skill-2" class="dot-2 dot"></label>
                         <label for="skill-3" class="dot-3 dot"></label>
                     </div>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section class="project">
+                <div class="container">
+                    <div class="project__top">
+                        <h2 class="project__heading section-heading">
+                            Take a look at my recent projects
+                        </h2>
+                        <p class="project__desc section-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum
+                            turpis.
+                        </p>
+                    </div>
+                    <div class="project__list">
+                        <div class="row row-cols-lg-2 row-cols-1 g-xl-30 g-20">
+                            <!-- Projcet item 1 -->
+                            <div class="col">
+                                <article class="project-item">
+                                    <div class="project-item__info">
+                                        <h3 class="project-item__title">
+                                            Wally Website
+                                        </h3>
+                                        <p class="project-item__sub-title">
+                                            Lorem ipsum dolor amet, consectetur
+                                            adipiscing st elit.
+                                        </p>
+                                        <a href="" class="project-item__link"
+                                            >Case Study</a
+                                        >
+                                    </div>
+                                    <div class="project-item__media">
+                                        <img
+                                            src="./assets/images/project-1.jpg"
+                                            alt=""
+                                            class="project-item__img"
+                                        />
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Projcet item 2 -->
+                            <div class="col">
+                                <article class="project-item">
+                                    <div class="project-item__info">
+                                        <h3 class="project-item__title">
+                                            Banking App
+                                        </h3>
+                                        <p class="project-item__sub-title">
+                                            Lorem ipsum dolor amet, consectetur
+                                            adipiscing st elit.
+                                        </p>
+                                        <a href="" class="project-item__link"
+                                            >Case Study</a
+                                        >
+                                    </div>
+                                    <div class="project-item__media">
+                                        <img
+                                            src="./assets/images/project-2.jpg"
+                                            alt=""
+                                            class="project-item__img"
+                                        />
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Projcet item 3 -->
+                            <div class="col">
+                                <article class="project-item">
+                                    <div class="project-item__info">
+                                        <h3 class="project-item__title">
+                                            Web App
+                                        </h3>
+                                        <p class="project-item__sub-title">
+                                            Lorem ipsum dolor amet, consectetur
+                                            adipiscing st elit.
+                                        </p>
+                                        <a href="" class="project-item__link"
+                                            >Case Study</a
+                                        >
+                                    </div>
+                                    <div class="project-item__media">
+                                        <img
+                                            src="./assets/images/project-3.jpg"
+                                            alt=""
+                                            class="project-item__img"
+                                        />
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Projcet item 4 -->
+                            <div class="col">
+                                <article class="project-item">
+                                    <div class="project-item__info">
+                                        <h3 class="project-item__title">
+                                            Oculus Website
+                                        </h3>
+                                        <p class="project-item__sub-title">
+                                            Lorem ipsum dolor amet, consectetur
+                                            adipiscing st elit.
+                                        </p>
+                                        <a href="" class="project-item__link"
+                                            >Case Study</a
+                                        >
+                                    </div>
+                                    <div class="project-item__media">
+                                        <img
+                                            src="./assets/images/project-4.jpg"
+                                            alt=""
+                                            class="project-item__img"
+                                        />
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn project__btn">All Projects</button>
                 </div>
             </section>
         </main>
