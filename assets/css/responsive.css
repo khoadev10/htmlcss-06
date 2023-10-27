@@ -192,10 +192,18 @@
     .project__desc {
         text-align: center;
     }
+
+    /* ========== Project  ========== */
+    .introduce-data {
+        padding: 40px 20px;
+    }
 }
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .section-heading {
+        font-size: 5rem;
+    }
 }
 
 /* Moblile */
@@ -217,6 +225,21 @@
             translate: 0;
         }
     }
+
+    /* ========== Common ========== */
+    .section-heading {
+        font-size: 3.6rem;
+        line-height: 116.667%;
+        letter-spacing: -0.144rem;
+    }
+
+    .section-desc {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 162.5%;
+    }
+
+    /* ========== Header ========== */
     .header__container-mobile {
         padding-left: 13px;
         padding-right: 13px;
@@ -225,6 +248,7 @@
     .menu-drawer {
         inset: 0 20% 0 0;
     }
+
     /* ========== Hero ========== */
     .hero {
         background-size: 100% 100%;
@@ -298,9 +322,7 @@
     }
 
     .skills__desc {
-        width: 350px;
-        font-size: 1.6rem;
-        line-height: 162.5%;
+        width: 100%;
     }
 
     .skills-item__icon {
@@ -367,15 +389,12 @@
     }
 
     .project__heading {
-        width: 301px;
+        width: 295px;
         color: #fff;
-        font-size: 3.6rem;
-        line-height: 116.667%;
-        letter-spacing: -0.144rem;
     }
 
     .project__desc {
-        width: 350px;
+        width: 100%;
         font-size: 1.6rem;
         font-weight: 400;
         line-height: 162.5%;
@@ -431,5 +450,31 @@
         height: 56px;
         font-size: 1.6rem;
         line-height: 187.5%;
+    }
+
+    /* ========== Introduce ========== */
+    .introduce-greeting__text {
+        font-size: 2rem;
+    }
+
+    .introduce-greeting__icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .introduce-data {
+        width: 100%;
+        padding: 30px 16px;
+    }
+
+    .introduce__desc {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .introduce-data__number {
+        font-size: 3rem;
+        line-height: 4.2rem; /* 140% */
+        letter-spacing: 0.09rem;
     }
 }

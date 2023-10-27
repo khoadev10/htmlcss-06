@@ -398,5 +398,65 @@ button {
     display: block;
     margin: 80px auto 0;
     color: var(--heading-color);
-    background: #FFF;
+    background: #fff;
+}
+
+/* =============== Introduce =============== */
+.introduce {
+    margin-top: 140px;
+}
+
+.introduce-greeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 9px;
+    margin-bottom: 10px;
+}
+
+.introduce-greeting__text {
+    color: var(--primary-color);
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 125%;
+    letter-spacing: -0.128rem;
+}
+
+.introduce__desc {
+    width: 48.718%;
+    margin: 15px auto 70px;
+}
+
+.introduce-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 50px;
+    width: 80.85%;
+    padding: 20px 95px;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 1px;
+    border-top: 1px solid rgb(8, 4, 21, 0.2);
+    border-bottom: 1px solid rgb(8, 4, 21, 0.2);
+}
+
+.introduce-data__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.introduce-data__number {
+    color: var(--heading-color);
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 135.714%;
+    letter-spacing: 0.168rem;
+    text-decoration-line: underline;
+}
+
+.introduce-data__title {
+    margin-top: 0;
+    text-align: left;
 }
