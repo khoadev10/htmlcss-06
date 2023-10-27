@@ -204,6 +204,13 @@
     .section-heading {
         font-size: 5rem;
     }
+    .introduce-data__number {
+        font-size: 5rem;
+    }
+
+    .introduce-data__title {
+        text-align: left;
+    }
 }
 
 /* Moblile */
@@ -341,46 +348,6 @@
         line-height: 175%;
     }
 
-    .slide-dots {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        column-gap: 13px;
-    }
-
-    .dot-1,
-    .dot-2,
-    .dot-3 {
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        background-color: rgba(8, 4, 21, 0.2);
-    }
-
-    #skill-1:checked ~ .dot-1,
-    #skill-2:checked ~ .dot-2,
-    #skill-3:checked ~ .dot-3 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 20px;
-        height: 20px;
-        background-color: #fff;
-        border-radius: 50%;
-        border: 1px solid var(--primary-color);
-    }
-
-    #skill-1:checked ~ .dot-1::before,
-    #skill-2:checked ~ .dot-2::before,
-    #skill-3:checked ~ .dot-3::before {
-        display: block;
-        content: "";
-        width: 12px;
-        height: 12px;
-        background-color: #5d3bee;
-        border-radius: 50%;
-    }
-
     /* ========== Project ========== */
     .project {
         margin-top: 120px;
@@ -476,5 +443,51 @@
         font-size: 3rem;
         line-height: 4.2rem; /* 140% */
         letter-spacing: 0.09rem;
+    }
+
+    .introduce_play {
+        width: 77px;
+        height: 77px;
+    }
+
+    .introduce_icon {
+        width: 12px;
+    }
+
+    .introduce_btn {
+        width: 118px;
+        height: 44px;
+        font-size: 1.2rem;
+        line-height: 250%;
+    }
+
+    /* Review */
+    .review {
+        margin-top: 121px;
+    }
+    .review__list {
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .review__desc {
+        width: 100%;
+    }
+
+    .review-item__content {
+        font-size: 1.8rem;
+    }
+
+    .review-auth {
+        margin-top: 48px;
+    }
+
+    .review-auth__avatar {
+        font-size: 2.4rem;
+        line-height: 166.667%; 
+    }
+
+    .review__dots {
+        margin-top: 20px;
     }
 }
