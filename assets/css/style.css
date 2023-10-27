@@ -542,6 +542,8 @@ button {
 
 /* =============== Review =============== */
 .review {
+    position: relative;
+    padding-bottom: 74px;
     margin-top: 150px;
 }
 
@@ -611,4 +613,18 @@ button {
 
 .review__dots {
     margin-top: 40px;
+}
+
+.review-bgr-deco {
+    position: absolute;
+    
+    bottom: 0;
+}
+
+.review-bgr-deco:nth-of-type(1) {
+    left: 0;
+}
+
+.review-bgr-deco:nth-of-type(2) {
+    right: 0;
 }
