@@ -1,5 +1,6 @@
-/* Large PC */
+/*  ******** << LARGE PC >>******** */
 @media screen and (max-width: 1199.98px) {
+    /* Clients */
     .clients__inner {
         flex-direction: column;
     }
@@ -19,7 +20,7 @@
     /*  */
 }
 
-/* PC */
+/*  ******** << PC >>******** */
 @media screen and (min-width: 992px) {
     .hidden-on-pc,
     .header__logo--mobile {
@@ -27,9 +28,9 @@
     }
 }
 
-/* Tablet & mobile */
+/*  ******** << TABLET MOBIEL >>******** */
 @media screen and (max-width: 991.98px) {
-    .hidden-on-tablet-mobile { 
+    .hidden-on-tablet-mobile {
         display: none;
     }
 
@@ -187,7 +188,7 @@
         text-align: center;
     }
 
-    /* ========== Project  ========== */
+    /* ========== Project ========== */
     .project__top {
         flex-direction: column;
     }
@@ -197,13 +198,21 @@
         text-align: center;
     }
 
-    /* ========== Project  ========== */
+    /* ========== Introduce ========== */
     .introduce-data {
         padding: 40px 20px;
     }
+
+    /* ========== Question ========== */
+    .question__inner {
+        width: 100%;
+    }
+    .questions__heading {
+        width: 100%;
+    }
 }
 
-/* Tablet */
+/*  ******** << TABLET >>******** */
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
     .hidden-on-tablet {
         display: none;
@@ -216,12 +225,32 @@
         font-size: 5rem;
     }
 
+    /* ========== Review  ========== */
+
+    .review__list {
+        width: 100%;
+    }
+
     .introduce-data__title {
         text-align: left;
     }
+
+    /* ========== Questions  ========== */
+    .question__content {
+        padding-right: 150px;
+        font-size: 2.8rem;
+    }
+    .question__btn--checked,
+    .question__btn--unchecked {
+        top: 20px;
+    }
+
+    .question__answer {
+        width: 70%;
+    }
 }
 
-/* Moblile */
+/*  ******** << MOBILE >>******** */
 @media screen and (max-width: 767.98px) {
     .hidden-on-mobile {
         display: none;
@@ -473,7 +502,7 @@
         line-height: 250%;
     }
 
-    /* Review */
+    /* ========== Reviews ========== */
     .review {
         margin-top: 121px;
     }
@@ -496,10 +525,50 @@
 
     .review-auth__avatar {
         font-size: 2.4rem;
-        line-height: 166.667%; 
+        line-height: 166.667%;
     }
 
     .review__dots {
         margin-top: 20px;
+    }
+
+    /* ========== Question ========== */
+    .questions__heading {
+        margin-top: 120px;
+        padding-right: 54px;
+        font-size: 3.6rem;
+        line-height: 116.667%;
+        letter-spacing: -0.144rem;
+    }
+
+    .questions__list {
+        margin-top: 42px;
+    }
+
+    .question {
+        padding-left: 0;
+    }
+
+    .question + .question {
+        margin-top: 40px;
+    }
+
+    .question__content {
+        max-width: 264px;
+        font-size: 2.4rem;
+        line-height: 125%;
+        letter-spacing: -0.096rem;
+    }
+
+    .question__btn--checked,
+    .question__btn--unchecked {
+        top: 0;
+        translate: 0 0;
+        width: 33px;
+        height: 33px;
+    }
+
+    .question__answer {
+        width: 100%;
     }
 }

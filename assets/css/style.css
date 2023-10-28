@@ -113,6 +113,15 @@ button {
     border-radius: 50%;
 }
 
+@keyframes grow {
+    from {
+        height: 0;
+    }
+    to {
+        height: 100%;
+    }
+}
+
 /* =============== Header =============== */
 .header {
     position: sticky;
@@ -617,7 +626,7 @@ button {
 
 .review-bgr-deco {
     position: absolute;
-    
+
     bottom: 0;
 }
 
@@ -627,4 +636,101 @@ button {
 
 .review-bgr-deco:nth-of-type(2) {
     right: 0;
+}
+
+/* =============== Questions =============== */
+.questions {
+    margin-top: 95px;
+}
+
+.question__inner {
+    width: 86.32%;
+}
+
+.questions__heading {
+    width: 56.93%;
+    text-align: left;
+}
+
+.questions__list {
+    margin-top: 80px;
+}
+
+.question {
+    position: relative;
+    width: 100%;
+    padding-left: 22px;
+}
+
+.question + .question {
+    margin-top: 60px;
+}
+
+.question__content {
+    color: var(--heading-color);
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 125%;
+    letter-spacing: -0.128rem;
+}
+
+.question__btn--checked,
+.question__btn--unchecked {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    translate: -50% -50%;
+    width: 50px;
+    height: 50px;
+    border-width: 2px;
+    border-radius: 50%;
+    border-style: solid;
+}
+
+.question__btn--checked {
+    border-color: rgba(22, 26, 28, 0.2);
+}
+
+.question__btn--unchecked {
+    display: none;
+    border-color: var(--primary-color);
+}
+
+.question__answer {
+    display: block;
+    height: 0;
+    width: 48.22%;
+    overflow: hidden;
+    text-align: left;
+}
+
+.question_border {
+    margin-top: 33px;
+    width: 100%;
+    height: 2px;
+    background: var(--heading-color);
+}
+
+.toggle-answer-input:checked ~ .question__wrap .question__content {
+    color: var(--primary-color);
+}
+
+.toggle-answer-input:checked ~ .question__answer {
+    height: 100%;
+}
+
+.toggle-answer-input:checked ~ .question__wrap .question__btn--checked {
+    display: none;
+}
+
+.toggle-answer-input:checked ~ .question__wrap .question__btn--unchecked {
+    display: flex;
+}
+
+.toggle-answer-input:checked ~ .question_border {
+    margin-top: 23px;
+    background: var(--primary-color);
 }
