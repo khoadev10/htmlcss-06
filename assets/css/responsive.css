@@ -571,4 +571,31 @@
     .question__answer {
         width: 100%;
     }
+
+    /* ========== Workspace ========== */
+    .workplace {
+        margin-top: 120px;
+    }
+    .workplace__dots {
+        margin-top: 40px;
+    }
+
+    .workplace__top {
+        width: 100%;
+    }
+
+    .workplace__email {
+        margin-top: 10px;
+        font-size: 2rem;
+        line-height: 200%;
+        letter-spacing: -0.08rem;
+    }
+
+    .workplace__media {
+        margin-top: 60px;
+    }
+
+    .workplace__img {
+        height: 503px;
+    }
 }
