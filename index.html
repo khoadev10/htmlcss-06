@@ -123,14 +123,14 @@
                                 />
                             </label>
                         </div>
-                        <a href="/">
+                        <a href="#home">
                             <img
                                 src="./assets/images/logo.svg"
                                 alt="An Interactive Designer"
                                 class="header__logo header__logo--pc"
                             />
                         </a>
-                        <a href="#!">
+                        <a href="#home">
                             <img
                                 src="./assets/images/logo-mobile.svg"
                                 alt="An Interactive Designer"
@@ -140,22 +140,22 @@
                         <nav class="header__navbar">
                             <ul class="header__list">
                                 <li>
-                                    <a href="#!" class="header__link"
+                                    <a href="#project" class="header__link"
                                         >Projects</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="#!" class="header__link"
+                                    <a href="#journey" class="header__link"
                                         >Journey</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="#!" class="header__link"
+                                    <a href="#service" class="header__link"
                                         >Service</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="#!" class="header__link"
+                                    <a href="#contact" class="header__link"
                                         >Contact</a
                                     >
                                 </li>
@@ -190,16 +190,16 @@
                 <nav class="header__navbar show-on-tablet">
                     <ul class="header__list">
                         <li>
-                            <a href="#!" class="header__link">Projects</a>
+                            <a href="#project" class="header__link">Projects</a>
                         </li>
                         <li>
-                            <a href="#!" class="header__link">Journey</a>
+                            <a href="#journey" class="header__link">Journey</a>
                         </li>
                         <li>
-                            <a href="#!" class="header__link">Service</a>
+                            <a href="#service" class="header__link">Service</a>
                         </li>
                         <li>
-                            <a href="#!" class="header__link">Contact</a>
+                            <a href="#contact" class="header__link">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -207,7 +207,7 @@
         </header>
 
         <!-- Main content -->
-        <main>
+        <main id="home">
             <!-- Hero -->
             <section class="hero">
                 <div class="container">
@@ -360,7 +360,7 @@
             </section>
 
             <!-- Skills -->
-            <section class="skills">
+            <section class="skills" id="service">
                 <div class="container">
                     <!-- Heading -->
                     <div class="row">
@@ -483,7 +483,7 @@
             </section>
 
             <!-- Projects -->
-            <section class="project">
+            <section class="project" id="project">
                 <div class="container">
                     <div class="project__top">
                         <h2 class="project__heading section-heading">
@@ -600,7 +600,7 @@
             </section>
 
             <!-- Introduce -->
-            <section class="introduce">
+            <section class="introduce" id="journey">
                 <div class="container">
                     <div class="introduce-greeting">
                         <span class="introduce-greeting__text"
@@ -649,13 +649,13 @@
                             controls
                             hidden
                         ></video>
-                        <div class="introduce_play">
+                        <button class="introduce_play">
                             <img
                                 src="./assets/icons/play-video.svg"
                                 alt="Play"
                                 class="introduce_icon"
                             />
-                        </div>
+                        </button>
                         <button class="btn introduce_btn">INTRO VIDEO</button>
                     </div>
                 </div>
@@ -1176,7 +1176,7 @@
             </section>
 
             <!-- Contact -->
-            <section class="contact">
+            <section class="contact" id="contact">
                 <div class="container">
                     <div class="contact__bgr">
                         <div class="contact__inner">
@@ -1204,26 +1204,37 @@
 
         <!-- Footer -->
         <footer class="footer">
+            <!-- Mobile -->
             <div class="container">
                 <div class="footer__header hidden-on-pc">
-                    <img
-                        src="./assets/images/logo-mobile.svg"
-                        alt="Logo"
-                        class="footer__logo"
-                    />
+                    <a href="#home">
+                        <img
+                            src="./assets/images/logo-mobile.svg"
+                            alt="Logo"
+                            class="footer__logo"
+                        />
+                    </a>
                     <nav class="footer__navbar">
                         <ul class="footer__list">
                             <li>
-                                <a href="#!" class="footer__link">Projects</a>
+                                <a href="#project" class="footer__link"
+                                    >Projects</a
+                                >
                             </li>
                             <li>
-                                <a href="#!" class="footer__link">Journey</a>
+                                <a href="#journey" class="footer__link"
+                                    >Journey</a
+                                >
                             </li>
                             <li>
-                                <a href="#!" class="footer__link">Service</a>
+                                <a href="#service" class="footer__link"
+                                    >Service</a
+                                >
                             </li>
                             <li>
-                                <a href="#!" class="footer__link">Contact</a>
+                                <a href="#contact" class="footer__link"
+                                    >Contact</a
+                                >
                             </li>
                         </ul>
                     </nav>
@@ -1241,7 +1252,9 @@
                     </div>
                 </div>
             </div>
+            <!-- Border line -->
             <div class="footer__border"></div>
+            <!-- Bottom -->
             <div class="footer__wrap">
                 <p class="footer__text footer__vesion">
                     ©interactiveArif 2021. All rights reserved.
