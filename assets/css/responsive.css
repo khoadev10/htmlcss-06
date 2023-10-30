@@ -83,10 +83,6 @@
         display: block;
     }
 
-    .input-check-menu {
-        display: none;
-    }
-
     .input-check-menu:checked ~ .menu-overlay {
         opacity: 1;
         visibility: visible;
