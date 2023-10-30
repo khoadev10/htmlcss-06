@@ -11,6 +11,7 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    overscroll-behavior: none;
 }
 
 body {
@@ -258,6 +259,10 @@ button:hover {
     border: 1px solid rgba(8, 4, 21, 0.1);
 }
 
+.hero-socical__item a {
+    padding: 10px;
+}
+
 /* ========== Clients ========== */
 .clients {
     margin-top: 100px;
@@ -335,6 +340,8 @@ button:hover {
 
 .skills-item {
     padding: 32px 42px;
+    background: #fbfaff;
+    border: 1px solid rgba(8, 4, 21, 0.1);
 }
 
 .skills-item__icon {
